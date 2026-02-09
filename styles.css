@@ -1,0 +1,800 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  color: #b8860b;
+  margin: 15px 0 8px;
+}
+
+:root {
+    --primary-cyan: #e0ffff;
+    --gold: #b8860b;
+    --dark-text: #2d2d2d;
+    --light-gray: #f9f9f9;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.8;
+    color: var(--dark-text);
+    background-color: #fbffff; 
+    overflow-x: hidden;
+}
+#Slide{
+    background-image: url('./Images/HeaderImage.jpg');
+    background-size: cover;
+    background-position: right center;
+    min-height: 40vh;
+}
+
+
+/* Header & Nav */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background: transparent;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: var(--gold);
+    letter-spacing: 2px;
+}
+
+#Header_styles ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+#Header_styles a {
+    text-decoration: none;
+    color: var(--dark-text);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+#Header_styles a:hover {
+    color: var(--gold);
+}
+
+/* Hero Section */
+.hero {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 10%;
+    margin-bottom: 50px;
+}
+
+.hero-content span {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.hero-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    color: var(--gold);
+    margin: 20px 0;
+    font-weight: 400;
+}
+
+.quick-links {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-link {
+    padding: 10px 20px;
+    border: 1px solid var(--gold);
+    text-decoration: none;
+    color: var(--gold);
+    font-size: 0.8rem;
+    transition: all 0.3s;
+}
+
+.btn-link:hover {
+    background: var(--gold);
+    color: white;
+}
+
+/* Flower Cards (The Meat) */
+.flower-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.flower-card {
+    display: flex;
+    align-items: center;
+    gap: 80px; /* Large negative space between img and text */
+    margin-bottom: 150px; /* Space between rows */
+}
+
+.flower-card.reverse {
+    flex-direction: row-reverse;
+}
+
+.flower-image {
+    flex: 1;
+    position: relative;
+}
+
+.flower-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 4px; /* Slight roundness for elegance */
+    box-shadow: 20px 20px 0px var(--primary-cyan); /* Modern offset background shadow */
+    transition: transform 0.5s ease;
+}
+
+.flower-card:hover .flower-image img {
+    transform: scale(1.02);
+}
+
+.flower-text {
+    flex: 1;
+}
+
+.scientific-name {
+    font-style: italic;
+    color: #aaa;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.flower-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: var(--gold);
+    margin-bottom: 20px;
+}
+
+.flower-text p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-cyan);
+    padding: 80px 10% 40px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.footer-nav {
+    margin-bottom: 30px;
+}
+
+.footer-nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: var(--gold);
+    font-weight: bold;
+}
+
+.copyright {
+    font-size: 0.8rem;
+    opacity: 0.7;
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .flower-card, .flower-card.reverse {
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 80px;
+    }
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+}
+
+
+
+
+
+
+
+
+/* Gallery Section */
+.aboutus{   
+  padding-top: 7em; 
+  padding-bottom: 7em;
+  max-width:100%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  /* background-color: #ffbcb5; */
+  background-color: #f1fffa; 
+}
+.aboutus h1, .aboutus p{
+  text-align: center;
+  max-width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+
+#Petals {
+  padding: 60px 0px;
+  text-align: center;
+  font-family: sans-serif;
+  color: #333;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+#Petals h2 {
+  margin-top: 4rem;
+  grid-column: 1 / -1;
+  color: #b8860b;
+  margin-bottom: 25px;
+}
+
+#Petals img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: 3s;
+}
+
+figure {
+  /* width: 100%; */
+  margin: 0;
+  padding: 25px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+  transition: .3s ease;
+}
+
+figure:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+figure img:hover {
+      transform: scale(1.03);
+}
+
+
+figcaption {
+  margin-bottom: 10px;
+}
+
+p {
+  line-height: 1.7;
+  margin-top: 10px;
+}
+
+@media (max-width: 900px) {
+  #Petals {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 550px) {
+  #Petals {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+}
+
+ 
+   h3 { color: #b8860b; margin: 10px 0; }
+    figcaption { font-style: italic; color: #555; }
+    p { line-height: 1.6; font-size: 15px; color: #444; }
+
+
+
+
+/* Packaging section */
+#Packaging {
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+  background-color: #f1fffa;
+  padding: 20px;
+  text-align: center;
+  /* border-radius: 30px; */
+    }
+
+#Packaging h3 {
+  margin-bottom: 15px;
+  color: #b8860b;
+  font-size: 30px;
+}
+
+.box {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+}
+
+
+.box img {
+      /* width: 300px;
+      height: 400px; */
+      display: grid;
+      object-fit: cover;
+      grid-template-columns: repeat(auto-fill, minmax (400px, 1fr));
+      grid-auto-rows: 250px;
+      border-radius: 10px;
+      margin-right: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform .3s;
+      cursor: pointer;
+      flex-shrink: 0; 
+}
+
+.box img:hover {
+      transform: scale(1.08);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    }
+
+.box-track {
+  display: flex;
+  /* gap: 15px; */
+  width: fit-content;
+  animation: scrollLoop 45s linear infinite;
+}
+
+@keyframes scrollLoop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+/* Sample Section */
+/* Gallery Container */
+#Samples {
+    max-width: 1200px;
+    margin: 100px auto; 
+    padding: 0 20px;
+}
+
+.samples-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.samples-header span {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 0.8rem;
+    color: #888;
+}
+
+#Samples h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #b8860b;
+    margin-top: 10px;
+}
+
+/* The Grid System */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: 300px; /* Base height for all images */
+    gap: 30px; /* High negative space between images */
+}
+
+/* Varied Image Sizes (The "Masonry" Look) */
+/* .sample-item.tall {
+    grid-row: span 2; 
+}
+
+.sample-item.wide {
+    grid-column: span 2; 
+} */
+
+/* The Frame */
+.sample-item {
+    position: relative;
+    overflow: hidden; /* Keeps the zoom effect inside the frame */
+    border-radius: 4px; /* Soft edges, not too round */
+    background-color: #f9f9f9;
+}
+
+#Samples img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images fill the frame without stretching */
+    transition: transform 1s cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+/* Sophisticated Hover Effect */
+.sample-item:hover img {
+    transform: scale(1.1); /* Slow, elegant zoom */
+}
+
+/* The Overlay Text */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(184, 134, 11, 0.15); /* Very light Gold tint on hover */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.overlay span {
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+    transform: translateY(20px);
+    transition: transform 0.5s ease;
+}
+
+.sample-item:hover .overlay {
+    opacity: 1;
+}
+
+.sample-item:hover .overlay span {
+    transform: translateY(0);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-auto-rows: 250px;
+        gap: 15px;
+    }
+    .sample-item.wide {
+        grid-column: span 1; /* Reset for small screens */
+    }
+}
+
+
+
+/* Services Page */
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+.services-intro {
+    text-align: center;
+    margin-bottom: 80px; /* Large negative space */
+}
+
+.services-intro span {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.services-intro h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #b8860b;
+    margin: 15px 0;
+}
+
+/* The Grid Layout */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 40px; /* Space between cards */
+}
+
+.service-card {
+    background-color: #fbffff; /* Very clean white */
+    padding: 40px;
+    border: 1px solid #f0f0f0;
+    transition: all 0.4s ease;
+    border-bottom: 3px solid #e0ffff; /* Subtle hint of your cyan */
+}
+
+.service-card:hover {
+    transform: translateY(-10px); /* Slight lift effect */
+    background-color: #e0ffff; /* Switch to your cyan on hover */
+    border-color: #e0ffff;
+}
+
+.service-card h3 {
+    font-family: 'Playfair Display', serif;
+    color: #b8860b;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.service-card ul {
+    list-style: none; /* Cleaner than numbers for elegance */
+    padding: 0;
+}
+
+.service-card ul li {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Decorate the list items with a tiny gold dot */
+.service-card ul li::before {
+    content: "•";
+    color: #b8860b;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Responsive: 2 columns for tablets, 1 for mobile */
+@media (max-width: 992px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    .services-intro h2 {
+        font-size: 2.2rem;
+    }
+}
+
+
+
+
+
+/* About Page */
+/* About Page Specific Styles */
+
+.about-page {
+    padding-bottom: 100px;
+}
+
+.about-hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #fbffff; /* Very light tint */
+}
+
+.about-hero span {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 0.8rem;
+    color: #b8860b;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.about-hero h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    line-height: 1.2;
+    color: #2d2d2d;
+}
+
+.about-content {
+    max-width: 800px; /* Limits width to create negative space on the sides */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.text-block p {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+/* The first paragraph is slightly larger */
+.lead-paragraph {
+    font-size: 1.4rem !important;
+    color: #2d2d2d !important;
+    font-style: italic;
+    border-left: 3px solid #e0ffff; /* Your Cyan color as an accent */
+    padding-left: 30px;
+    margin: 60px 0;
+}
+
+/* Mission Highlight Section */
+.mission-highlight {
+    margin: 80px 0;
+    padding: 60px;
+    background-color: #e0ffff; /* Your primary Cyan */
+    text-align: center;
+    border-radius: 2px;
+}
+
+.mission-highlight blockquote {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #b8860b; /* Your Gold */
+    font-style: italic;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-hero h2 {
+        font-size: 2.5rem;
+    }
+    
+    .mission-highlight {
+        padding: 30px;
+    }
+    
+    .mission-highlight blockquote {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* Contact Page */
+/* Contact Page Styling */
+
+.contact-container {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.contact-wrapper {
+    display: flex;
+    gap: 100px; /* Large negative space between info and form */
+    align-items: flex-start;
+}
+
+/* Info Side Styles */
+.contact-info {
+    flex: 1;
+}
+
+.contact-info span {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.contact-info h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #b8860b; /* Gold */
+    margin: 20px 0;
+    line-height: 1.2;
+}
+
+.contact-info p {
+    color: #666;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+.info-item {
+    margin-bottom: 30px;
+}
+
+.info-item h3 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #2d2d2d;
+    margin-bottom: 10px;
+}
+
+.info-item p {
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+/* Form Side Styles */
+.contact-form-section {
+    flex: 1;
+    background-color: #e0ffff; /* Your Cyan */
+    padding: 60px;
+    border-radius: 4px;
+}
+
+.flower-form .form-group {
+    margin-bottom: 25px;
+}
+
+.flower-form label {
+    display: block;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.flower-form input, 
+.flower-form select, 
+.flower-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid rgba(0,0,0,0.05);
+    background: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.flower-form input:focus, 
+.flower-form textarea:focus {
+    border: 1px solid #b8860b; /* Focus color gold */
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: #b8860b;
+    color: white;
+    border: none;
+    padding: 18px 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #946c09;
+    letter-spacing: 4px; /* Subtle elegant hover effect */
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .contact-wrapper {
+        flex-direction: column;
+        gap: 60px;
+    }
+    
+    .contact-form-section {
+        width: 100%;
+        padding: 40px 20px;
+    }
+}
